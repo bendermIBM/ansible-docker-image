@@ -11,9 +11,6 @@ matrix:
       DOCKER_FILE: docker_images/Dockerfile.centos-7
       DOCKER_BUILD_TAG: centos-7
   - env:
-      DOCKER_FILE: docker_images/Dockerfile.debian-jessie
-      DOCKER_BUILD_TAG: debian-jessie
-  - env:
       DOCKER_FILE: docker_images/Dockerfile.debian-stretch
       DOCKER_BUILD_TAG: debian-stretch
   - env:
