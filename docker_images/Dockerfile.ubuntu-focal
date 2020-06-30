@@ -6,7 +6,7 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y software-pro
 
 RUN pip3 install ansible
 
-RUN run mkdir -p /etc/ansible && touch /etc/ansible/hosts
+RUN mkdir -p /etc/ansible && touch /etc/ansible/hosts
 
 RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
