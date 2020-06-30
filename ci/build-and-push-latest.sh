@@ -5,7 +5,7 @@ if [[ "$TRAVIS_BRANCH" == "master" ]] && [[ "$TRAVIS_PULL_REQUEST" == "false" ]]
     make docker:push
 fi
 
-if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]; then 
+if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then 
     export DOCKER_BUILD_TAG=$DOCKER_BUILD_TAG-pr && \
     make docker:build && \
     make docker:login && \
