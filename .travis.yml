@@ -5,6 +5,9 @@ services:
 - docker
 dist: bionic
 script: ./ci/build-and-push-latest.sh
+branches:
+  only:
+  - master
 matrix:
   include:
   - env:
