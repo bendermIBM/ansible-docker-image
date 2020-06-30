@@ -57,6 +57,7 @@ matrix:
       DOCKER_BUILD_TAG: ubuntu-focal
 env:
   global:
+  - RUNAGAIN=yes
   - DOCKER_IMAGE=ansible
   - DOCKER_REGISTRY=bendermibm
 notifications:
