@@ -1,10 +1,10 @@
 FROM ubuntu:focal
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y software-properties-common systemd python3 python3-pip
 
 RUN pip3 install ansible
-
-ARG DEBIAN_FRONTEND=noninteractive
 
 RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
