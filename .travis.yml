@@ -11,6 +11,9 @@ branches:
 matrix:
   include:
   - env:
+      DOCKER_FILE: docker_images/Dockerfile.clefos-7
+      DOCKER_BUILD_TAG: clefos-7
+  - env:
       DOCKER_FILE: docker_images/Dockerfile.centos-7
       DOCKER_BUILD_TAG: centos-7
   - env:
